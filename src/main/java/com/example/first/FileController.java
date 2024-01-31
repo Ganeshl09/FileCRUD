@@ -51,8 +51,12 @@ public class FileController {
 	@ResponseBody
 	public String deleteFile(@PathVariable(name = "id") String id) {
 		String res = storageService.Delete(id);
+
 		return "delete";
 
+		
+		
+		
 	}
 
 	@GetMapping("/files")
